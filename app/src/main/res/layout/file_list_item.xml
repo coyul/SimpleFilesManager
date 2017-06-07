@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/list_item_padding"
+    >
+
+    <ImageView
+        android:id="@+id/fileicon"
+        android:layout_width="@dimen/standart_icon_size"
+        android:layout_height="@dimen/standart_icon_size"
+        android:layout_marginRight="@dimen/list_item_padding"
+        tools:src="@drawable/icon_folder"
+        />
+
+    <TextView
+        android:id="@+id/filename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/fileicon"
+        android:textSize="@dimen/large_text_size"
+        tools:text="my file"
+        />
+
+    <TextView
+        android:id="@+id/filesize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/fileicon"
+        android:layout_below="@+id/filename"
+        tools:text="100 kb"
+        />
+
+</RelativeLayout>
